@@ -1,8 +1,10 @@
 # Python Modern Calculator
 
-A modern calculator built with Python and `customtkinter`. Supports basic arithmetic with a clean, responsive UI and keyboard controls.
+
 ![image alt](https://github.com/ArchWizardSlayne/AI_Built_Calculator/blob/ee544152ee12b9e0887917a1052b30486ae19d0d/screenshot.png)
 
+
+A modern calculator built with Python and `customtkinter`. Supports basic arithmetic with a clean, responsive UI and keyboard controls.
 ## Features
 
 - **Basic Arithmetic**: Addition, subtraction, multiplication, division, modulo, and exponentiation with full parentheses support
