@@ -29,130 +29,47 @@ A modern calculator built with Python and `customtkinter`. Supports basic arithm
 
 ## Installation
 
+1. **Create and activate a virtual environment:**
 
+   ```bash
+   python -m venv .venv
+   ```
 
-### Virtual Environment (Recommended)
+   - **Windows**: `.venv\Scripts\activate`
+   - **macOS/Linux**: `source .venv/bin/activate`
 
-For any operating system, use a virtual environment to keep dependencies isolated:
+2. **Install customtkinter:**
 
-```bash
-python -m venv .venv
-```
+   ```bash
+   pip install customtkinter
+   ```
 
-Activate the virtual environment:
+3. **Install pyinstaller (optional, for building executables):**
 
-- **Windows**: `.venv\Scripts\activate`
-- **macOS/Linux**: `source .venv/bin/activate`
+   ```bash
+   pip install pyinstaller
+   ```
 
-Install customtkinter:
+4. **Run the calculator:**
 
-```bash
-pip install customtkinter
-```
+   ```bash
+   python main.py
+   ```
 
-Run the calculator:
+## Building an Executable with PyInstaller
 
-```bash
-python main.py
-```
-
-
-### Windows
-
-1. Download and install Python 3.8+ from [python.org](https://www.python.org/downloads/)
-2. Ensure "Add Python to PATH" is checked during installation
-3. Open Command Prompt and install customtkinter:
-
-```cmd
-pip install customtkinter
-```
-
-4. Run the calculator:
-
-```cmd
-python main.py
-```
-
-### macOS
-
-1. Install Python 3.8+ using Homebrew:
+Create a standalone executable:
 
 ```bash
-brew install python@3.11
+pyinstaller --onefile --windowed --name "Calculator" main.py
 ```
 
-2. Install customtkinter:
+**Options:**
+- `--onefile`: Single executable file
+- `--windowed`: No console window
+- `--name "Calculator"`: Executable name
 
-```bash
-pip install customtkinter
-```
-
-3. Run the calculator:
-
-```bash
-python main.py
-```
-
-### Linux (Ubuntu/Debian)
-
-1. Install Python and required dependencies:
-
-```bash
-sudo apt update
-sudo apt install python3 python3-pip python3-tk
-```
-
-2. Install customtkinter:
-
-```bash
-pip install customtkinter
-```
-
-3. Run the calculator:
-
-```bash
-python3 main.py
-```
-
-### Linux (Arch)
-
-1. Install Python and required dependencies:
-
-```bash
-sudo pacman -Syu python python-pip tk
-```
-
-2. Install customtkinter:
-
-```bash
-pip install customtkinter
-```
-
-3. Run the calculator:
-
-```bash
-python main.py
-```
-
-### Linux (Fedora/RHEL)
-
-1. Install Python and required dependencies:
-
-```bash
-sudo dnf install python3 python3-pip tk
-```
-
-2. Install customtkinter:
-
-```bash
-pip install customtkinter
-```
-
-3. Run the calculator:
-
-```bash
-python3 main.py
-```
+The executable will be in the `dist/` folder.
 
 
 ## How it works
