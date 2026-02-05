@@ -21,63 +21,218 @@ A modern calculator built with Python and `customtkinter`. Supports basic arithm
 - **Expression History**: Automatically saves evaluated expressions; navigate with Up/Down arrows
 - **Safe Evaluation**: Uses Python's AST module to safely evaluate expressions without allowing arbitrary code execution
 
-## Requirements
 
-- Python 3.8+
-- `tk` / `tkinter` (usually included with Python)
-- `customtkinter` package
 
 ## Installation
 
-1. **Create and activate a virtual environment:**
+Choose your operating system below for specific setup instructions.
 
-   ```bash
-   python -m venv .venv
+### Windows
+
+1. **Clone the repository:**
+   ```cmd
+   git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
+   
    ```
 
-   - **Windows**: `.venv\Scripts\activate`
-   - **macOS/Linux**: `source .venv/bin/activate`
+2. **Install Python 3.8+**
+   - Download from [python.org](https://www.python.org/downloads/)
+   - Run the installer and check "Add Python to PATH"
+   - tk/tkinter is included by default
 
-2. **Install customtkinter:**
+3. **Create and activate a virtual environment:**
+   ```cmd
+   cd AI_Built_Calculator
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
 
+4. **Install customtkinter:**
+   ```cmd
+   pip install customtkinter
+   ```
+
+5. **Install pyinstaller (optional, for building executables):**
+   ```cmd
+   pip install pyinstaller
+   ```
+
+6. **Run the calculator:**
+   ```cmd
+   python main.py
+   ```
+
+### macOS
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
+   
+   ```
+
+2. **Install Python 3.8+**
+   - Using Homebrew:
+   ```bash
+   brew install python@3.11
+   ```
+   - tk is included with the Python installation
+
+3. **Create and activate a virtual environment:**
+   ```bash
+   cd AI_Built_Calculator
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+4. **Install customtkinter:**
    ```bash
    pip install customtkinter
    ```
 
-3. **Install pyinstaller (optional, for building executables):**
-
+5. **Install pyinstaller (optional, for building executables):**
    ```bash
    pip install pyinstaller
    ```
 
-4. **Run the calculator:**
-
+6. **Run the calculator:**
    ```bash
    python main.py
    ```
 
-## Building an Executable with PyInstaller
+### Linux (Ubuntu/Debian)
 
-Create a standalone executable:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
+   ```
+
+2. **Install Python and tk:**
+   ```bash
+   sudo apt update
+   sudo apt install python3 python3-pip python3-tk
+   ```
+
+3. **Create and activate a virtual environment:**
+   ```bash
+   cd AI_Built_Calculator
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+4. **Install customtkinter:**
+   ```bash
+   pip install customtkinter
+   ```
+
+5. **Install pyinstaller (optional, for building executables):**
+   ```bash
+   pip install pyinstaller
+   ```
+
+6. **Run the calculator:**
+   ```bash
+   python3 main.py
+   ```
+
+### Arch
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
+   ```
+
+2. **Install Python and tk:**
+   ```bash
+   sudo pacman -Syu python python-pip tk
+   ```
+
+3. **Create and activate a virtual environment:**
+   ```bash
+   cd AI_Built_Calculator
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+4. **Install customtkinter:**
+   ```bash
+   pip install customtkinter
+   ```
+
+5. **Install pyinstaller (optional, for building executables):**
+   ```bash
+   pip install pyinstaller
+   ```
+
+6. **Run the calculator:**
+   ```bash
+   python main.py
+   ```
+
+### Linux (Fedora/RHEL)
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
+   ```
+
+2. **Install Python and tk:**
+   ```bash
+   sudo dnf install python3 python3-pip tk
+   ```
+
+3. **Create and activate a virtual environment:**
+   ```bash
+   cd AI_Built_Calculator
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+4. **Install customtkinter:**
+   ```bash
+   pip install customtkinter
+   ```
+
+5. **Install pyinstaller (optional, for building executables):**
+   ```bash
+   pip install pyinstaller
+   ```
+
+6. **Run the calculator:**
+   ```bash
+   python3 main.py
+   ```
+
+## Building an Executable
+
+To create a standalone executable using PyInstaller, run the same command on any operating system:
 
 ```bash
+
 pyinstaller --onefile --windowed --name "Calculator" main.py
 ```
 
 **Options:**
-- `--onefile`: Single executable file
-- `--windowed`: No console window
-- `--name "Calculator"`: Executable name
+- `--onefile`: Creates a single executable file
+- `--windowed`: Removes the console window (GUI-only)
+- `--name "Calculator"`: Sets the executable name
 
-The executable will be in the `dist/` folder.
+**Output by Operating System:**
 
+- **Windows**: `dist/Calculator.exe`
+- **macOS**: `dist/Calculator` (or `dist/Calculator.app` for a proper app bundle)
+- **Linux**: `dist/Calculator`
 
-## How it works
+The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
+
+## How to Use
+
 - Click number buttons or type on your keyboard to enter expressions
 - Press `=` or `Enter` to evaluate
-- Use `Backspace` to delete, `Escape` to clear
-- Press `Up`/`Down` arrows to navigate history
-- Click the dropdown menu to switch themes
+- Use `Backspace` to delete the last character, `Escape` to clear all
+- Press `Up`/`Down` arrows to navigate through expression history
+- Click the theme dropdown in the top-right to switch between Light and Dark modes
 
 The calculator uses Python's `ast` module to safely parse and evaluate user-provided mathematical expressions. Only whitelisted operators are allowed, preventing malicious code execution. Expressions are recursively evaluated through an Abstract Syntax Tree, supporting nested operations like `(2 + 3) * (5 - 1)`.
+
+
 
