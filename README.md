@@ -21,8 +21,6 @@ A modern calculator built with Python and `customtkinter`. Supports basic arithm
 - **Expression History**: Automatically saves evaluated expressions; navigate with Up/Down arrows
 - **Safe Evaluation**: Uses Python's AST module to safely evaluate expressions without allowing arbitrary code execution
 
-
-
 ## Installation
 
 Choose your operating system below for specific setup instructions.
@@ -32,7 +30,6 @@ Choose your operating system below for specific setup instructions.
 1. **Clone the repository:**
    ```cmd
    git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
-   
    ```
 
 2. **Install Python 3.8+**
@@ -56,14 +53,15 @@ Choose your operating system below for specific setup instructions.
    ```cmd
    pip install pyinstaller
    ```
-6. **Building an Executable(Optional)**
 
-  ```cmd
-  cd AI_Built_Calculator
-  pyinstaller --onefile --windowed --name "Calculator" main.py
-  ```
-  **Output**
-  The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
+6. **Building an Executable (Optional)**
+
+   ```cmd
+   cd AI_Built_Calculator
+   pyinstaller --onefile --windowed --name "Calculator" main.py
+   ```
+
+   The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
 
 7. **Run the calculator:**
    ```cmd
@@ -75,7 +73,6 @@ Choose your operating system below for specific setup instructions.
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ArchWizardSlayne/AI_Built_Calculator.git
-   
    ```
 
 2. **Install Python 3.8+**
@@ -101,16 +98,15 @@ Choose your operating system below for specific setup instructions.
    ```bash
    pip install pyinstaller
    ```
-6. **Building an Executable(Optional)**
 
-  To create a standalone executable using PyInstaller, run the same command on any operating system:
+6. **Building an Executable (Optional)**
 
-  ```bash
-  cd AI_Built_Calculator
-  pyinstaller --onefile --windowed --name "Calculator" main.py
-  ```
-  **Output**
-  The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
+   ```bash
+   cd AI_Built_Calculator
+   pyinstaller --onefile --windowed --name "Calculator" main.py
+   ```
+
+   The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
 
 7. **Run the calculator:**
    ```bash
@@ -146,16 +142,15 @@ Choose your operating system below for specific setup instructions.
    ```bash
    pip install pyinstaller
    ```
-6. **Building an Executable(Optional)**
 
-  To create a standalone executable using PyInstaller, run the same command on any operating system:
+6. **Building an Executable (Optional)**
 
-  ```bash
-  cd AI_Built_Calculator
-  pyinstaller --onefile --windowed --name "Calculator" main.py
-  ```
-  **Output**
-  The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
+   ```bash
+   cd AI_Built_Calculator
+   pyinstaller --onefile --windowed --name "Calculator" main.py
+   ```
+
+   The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
 
 7. **Run the calculator:**
    ```bash
@@ -190,16 +185,15 @@ Choose your operating system below for specific setup instructions.
    ```bash
    pip install pyinstaller
    ```
-6. **Building an Executable(Optional)**
 
-  To create a standalone executable using PyInstaller, run the same command on any operating system:
+6. **Building an Executable (Optional)**
 
-  ```bash
-  cd AI_Built_Calculator
-  pyinstaller --onefile --windowed --name "Calculator" main.py
-  ```
-  **Output**
-  The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
+   ```bash
+   cd AI_Built_Calculator
+   pyinstaller --onefile --windowed --name "Calculator" main.py
+   ```
+
+   The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
 
 7. **Run the calculator:**
    ```bash
@@ -234,23 +228,20 @@ Choose your operating system below for specific setup instructions.
    ```bash
    pip install pyinstaller
    ```
-6. **Building an Executable(Optional)**
 
-  To create a standalone executable using PyInstaller, run the same command on any operating system:
+6. **Building an Executable (Optional)**
 
-  ```bash
-  cd AI_Built_Calculator
-  pyinstaller --onefile --windowed --name "Calculator" main.py
-  ```
-  **Output**
-  The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
+   ```bash
+   cd AI_Built_Calculator
+   pyinstaller --onefile --windowed --name "Calculator" main.py
+   ```
+
+   The executable will be created in the `dist/` folder and can be run without Python or any dependencies installed.
 
 7. **Run the calculator:**
    ```bash
    python3 main.py
    ```
-
-
 
 ## How to Use
 
