@@ -29,6 +29,41 @@ A modern calculator built with Python and `customtkinter`. Supports basic arithm
 
 ## Installation
 
+
+
+### Virtual Environment (Recommended)
+
+For any operating system, use a virtual environment to keep dependencies isolated:
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+- **Windows**: `.venv\Scripts\activate`
+- **macOS/Linux**: `source .venv/bin/activate`
+
+Install customtkinter:
+
+```bash
+pip install customtkinter
+```
+
+Run the calculator:
+
+```bash
+python main.py
+```
+
+## Usage
+
+Run the calculator:
+
+```bash
+python main.py
+```
+
 ### Windows
 
 1. Download and install Python 3.8+ from [python.org](https://www.python.org/downloads/)
@@ -126,39 +161,8 @@ pip install customtkinter
 python3 main.py
 ```
 
-### Virtual Environment (Recommended)
 
-For any operating system, use a virtual environment to keep dependencies isolated:
-
-```bash
-python -m venv .venv
-```
-
-Activate the virtual environment:
-
-- **Windows**: `.venv\Scripts\activate`
-- **macOS/Linux**: `source .venv/bin/activate`
-
-Install customtkinter:
-
-```bash
-pip install customtkinter
-```
-
-Run the calculator:
-
-```bash
-python main.py
-```
-
-## Usage
-
-Run the calculator:
-
-```bash
-python main.py
-```
-
+### How it works
 - Click number buttons or type on your keyboard to enter expressions
 - Press `=` or `Enter` to evaluate
 - Use `Backspace` to delete, `Escape` to clear
