@@ -56,13 +56,6 @@ Run the calculator:
 python main.py
 ```
 
-## Usage
-
-Run the calculator:
-
-```bash
-python main.py
-```
 
 ### Windows
 
@@ -162,7 +155,7 @@ python3 main.py
 ```
 
 
-### How it works
+## How it works
 - Click number buttons or type on your keyboard to enter expressions
 - Press `=` or `Enter` to evaluate
 - Use `Backspace` to delete, `Escape` to clear
