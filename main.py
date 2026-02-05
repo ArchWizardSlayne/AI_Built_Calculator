@@ -1,3 +1,6 @@
+### To run this code, ensure you have the 'customtkinter' library installed.
+
+
 import ast
 import operator as op
 import customtkinter as ctk
@@ -249,3 +252,5 @@ class CalculatorApp(ctk.CTk):
 if __name__ == "__main__":
     app = CalculatorApp()
     app.mainloop()
+
+
