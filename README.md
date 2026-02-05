@@ -57,7 +57,6 @@ Choose your operating system below for specific setup instructions.
 6. **Building an Executable (Optional)**
 
    ```cmd
-   cd AI_Built_Calculator
    pyinstaller --onefile --windowed --name "Calculator" main.py
    ```
 
@@ -102,7 +101,6 @@ Choose your operating system below for specific setup instructions.
 6. **Building an Executable (Optional)**
 
    ```bash
-   cd AI_Built_Calculator
    pyinstaller --onefile --windowed --name "Calculator" main.py
    ```
 
@@ -146,7 +144,6 @@ Choose your operating system below for specific setup instructions.
 6. **Building an Executable (Optional)**
 
    ```bash
-   cd AI_Built_Calculator
    pyinstaller --onefile --windowed --name "Calculator" main.py
    ```
 
@@ -189,7 +186,6 @@ Choose your operating system below for specific setup instructions.
 6. **Building an Executable (Optional)**
 
    ```bash
-   cd AI_Built_Calculator
    pyinstaller --onefile --windowed --name "Calculator" main.py
    ```
 
@@ -232,7 +228,6 @@ Choose your operating system below for specific setup instructions.
 6. **Building an Executable (Optional)**
 
    ```bash
-   cd AI_Built_Calculator
    pyinstaller --onefile --windowed --name "Calculator" main.py
    ```
 
